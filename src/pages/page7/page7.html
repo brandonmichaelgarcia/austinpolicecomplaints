@@ -64,12 +64,16 @@
           </ion-label>
           <ion-input type="time" placeholder=""></ion-input>
         </ion-item>
-        <ion-item id="page7-radio1">
-          <ion-label>
-            AM / PM radio
-          </ion-label>
-          <ion-radio></ion-radio>
-        </ion-item>
+        <ion-list radio-group>
+          <ion-item>
+            <ion-label>AM</ion-label>
+            <ion-radio value="AM"></ion-radio>
+          </ion-item>
+          <ion-item>
+            <ion-label>PM</ion-label>
+            <ion-radio value="PM"></ion-radio>
+          </ion-item>
+        </ion-list>
       </form>
     </ion-list>
   </ion-card>
