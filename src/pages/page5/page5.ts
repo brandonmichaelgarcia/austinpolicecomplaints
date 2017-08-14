@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
+import { Page6Page } from '../page6/page6';
 
 @Component({
   selector: 'page-page5',
@@ -10,4 +11,7 @@ export class Page5Page {
   constructor(public navCtrl: NavController) {
   }
   
+  segueToPage6(){
+    this.navCtrl.push(Page6Page);
+  }
 }

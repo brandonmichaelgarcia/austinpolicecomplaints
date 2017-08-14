@@ -11,9 +11,6 @@
   </div>
   <ion-card id="page1-card21">
     <ion-list>
-      <div style="width:100%;height:220px;margin:0px 0px;line-height:250px;background-color:#e8ebef;text-align:center;">
-        <i class="icon ion-image" style="font-size:64px;color:#888;vertical-align:middle;"></i>
-      </div>
       <ion-item id="page1-list-item-container2">
         <div id="page1-markdown3" class="show-list-numbers-and-dots">
           <p style="margin-top:0px;color:#000000;">
@@ -25,13 +22,13 @@
           </p>
         </div>
       </ion-item>
-      <button id="page1-button1" ion-button color="positive" block>
+      <button id="page1-button1" ion-button color="positive" (click)="segueToPage2()" block>
         Yes, it happened to me.
       </button>
-      <button id="page1-button2" ion-button color="positive" block>
+      <button id="page1-button2" ion-button color="positive" (click)="segueToPage4()" block>
         No, I am an eye-witness
       </button>
-      <button id="page1-button3" ion-button color="positive" block>
+      <button id="page1-button3" ion-button color="positive" (click)="segueToPage4()" block>
         No, I learned about it on social media.
       </button>
     </ion-list>
